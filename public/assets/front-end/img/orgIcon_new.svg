@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<title>orgIcon_new (1)</title>
+	<defs>
+		<image  width="24" height="24" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAAXNSR0IB2cksfwAAATJQTFRF+vr6/Pv8/f3919fXsbGxqqqqm5ublJSUq6urs7Ozy8vL+Pj4+fn5/////v7+1NTUo6OjwcHB4uLi6Ojo8/Pz5OTk4eHhxMTEoaGh3Nzc9/f3qampxMTEycnJp6any8vL4ODg3d3d6+vrnp6e9fX17Ozs9vb2pKSk3t7e0tLS0NDQ0tLSra2tsLCwzMzM29vboqKizc3NxsbGwcHBnZ2du7u70NDQtLS07u7u5+fnycnJoKCgpaWlwMDAzs7O1tbW5eXlsbGxmpqax8fHnJycy8vL2dnZrKysqKio1NTUtra24+Pjtra2zs7OxcXFzc3NzMzMoqKir6+v2trazc3N8fHxycnJqKio8vLy09PT0NDQz8/P7+/vqampzc3NoaGhxMTE6urq0NDQsrKylZWV09PT3WqyOAAAAGZ0Uk5TAAAAAL7/////2S0AAAAAAP82AAAAAABt/wAA/yYR/wsAAAD/AAAA/wAUIAD/7AgA/yBggP+mDdMAAE3//4YtAADm/1r/QAD//wciAMYAADMzrfMAAAAVhgAAAwQAgAmzAAAAPv8H5bRf3wAAAbFJREFUeJwtUYtW00AQnR2lqNk7xpK0S9ASDbZF0cYaBUmEthQQKr4QLb6f//8LzgZnz9lz5t553LtLRGRYr0uXFxqLV65eC9hCrAH5YFwPbzSXIsSttlsWEUMXkazcTAwAZgO+1QkS+59ZTWEIJIDScnv1TiJCNgmyJYXEylrkmyB3XRfQwl5fcRiL9XtgPZC4ox3cv+9xsNDGg0Rxnz0cBES5YdQRZ3kfka4XFif0aKhVmhE9dsUTEV9FGD6lzVjXbj0brG+HYVk939ltjXTYaEyOdG3b5WE+yVxeujLc066oR1OjCmm/N3VVloVlww3Z+2nQ1PuCPTisyuyFc50j0UKYCTkrNbPn8qzI3b5PRIKcjmfwprDtXDkp8x1vkSV+SSevtFyZcTgtiqIa+zmM12/IvmVYsM3Ld4PlFRdG3gZKJpy+9w+SuvYZ46xdzaBqPwyY2HxMdV1zpOoMTKwJWoek34D5+byWglqekvNPiTEUgEYnKS4wPxSzz19ICX1Lu/b1XDcqbnTet6qruI5SfUyn33+kPyFbzWF5EHhcO1RqV9j8+r3wZ3Fj868kpo5/CvM066P8b2sAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>

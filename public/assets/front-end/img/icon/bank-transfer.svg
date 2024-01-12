@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18">
+	<title>bank-transfer</title>
+	<defs>
+		<image  width="18" height="14" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAMAAAAVBLyFAAAAAXNSR0IB2cksfwAAASxQTFRFzc3J4OHc5+jj5+jj5+jj0tLO5ufi5+jj5+jj5+jj1NTQ5+jj5cbC4ZKP46+sbqi4d627vdLUvNHTj7nDzdvaibfBpMXLmr/ImsDIk7zF0t3c5L+74IB+4qOgMYiiTpesh7XBY6KzRJKotM3RO42mR5Sqaaa2IYCcYaKz4ubh4H99NYqjWZ2wVZuvOo2lQJCnea68Z6S1JIGdW5+xVpyvyNjY19jXwb/Ex8HExMvPudPWsNHXwdrdvtjbxt7gptDZudnestXbrdXdutnettney93e2OXkptvmnNnmmdjmtt7lodrlo9rmm9jmqNvlweHlltfmsN3mv+Dl5OfjweDksd3lt97lrtzlptvlr9zl3ObjndnmyeLk0tLO5ufi5+jjzc3J4eLd5+jj5+jjsw5TDQAAAGR0Uk5THTEyMR3g/f384P//////////////////////////////////////////////////////////////////////////////////////////////////////////////6f/oIjMzIoejHToAAACWSURBVHicY2BgZEIBzCwMrGzsKICDk4GLGx1gFeLh5eXjFxAUEhYRFROXkJQCCknLyMjKySsoKimrqKqpa2iChLS0ZLV1dPX0DQyN1IxNTIFCZuYWllbWNrZ29g6OTs4urkAhN3cPTy9vH18/Pw//gECPIKBQcEhoWGhoeGhYRGRUdGhYDHZHYArFxqGJxDMkJCahgmQAKe4g2WCmfQwAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="2"/>
+</svg>

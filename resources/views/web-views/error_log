@@ -1,0 +1,4 @@
+[08-Jan-2023 17:50:52 UTC] PHP Fatal error:  Uncaught Error: Class "App\Model\OrderDetail" not found in /home/hakimitr/malamal.hakimitraders.com/resources/views/web-views/order-tracking.blade.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hakimitr/malamal.hakimitraders.com/resources/views/web-views/order-tracking.blade.php on line 23

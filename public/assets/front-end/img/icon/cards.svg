@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18">
+	<title>cashless-payment</title>
+	<defs>
+		<image  width="18" height="18" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAAAXNSR0IB2cksfwAAAaRQTFRFe3J7e3J7iYeMiIWLfXV9e3J7g32EhYWJc3B2aGFpAAAAe3J7j5CT1vrs0fPmnKOjj5CUvNPL0Prqp8G5aGFpe3J7kZKWxvfsr+/oru7nsfLqrfPqjsjFU46YL9nnKtjnAtDkAdDkbubpNNrnM9jmMNflL9nnLtnnBtHlANDkYePpSNvcs+GsvuKneN3GMdnnQNzoQ9zpSt3pWN/qM9rnUN7qB9LlANDkU9vX7uSR/eWKmuC3MdnmS93pT97qW+DrcePsNtroZOHrONrjXtzSYtzQSdvbMNnnL9nnZ9/lONTiNtXjOtvoVd/qQtzpRtzptrG0qZOdpZafQs/cYeHrsO3yc+PsmunwnerwlOjv8o6O/2Fn/2FoZrnFaOLspOvxpevxx/DzaeLshebuddjdTMnXRc3aeeTtTd7pVN/qXODrBtLlqfHrfunqfenqeunpaM/SQLbCL9nnK9jnA9HkAdDk0frqqcO7aGFpz/nsdefpV+HpXeLprvLr0vnsjuzqdOfqeujqu/Xr0fns1frsiomOxuPYx+PZwePXnLCraGFpiomOD7qKYAAAAIx0Uk5TEsH+///////tMgAw/v////////93M/////////+WOTk1B/////v4+PQs/////////////////zP////////////////////////////////////////////////////////////////////////////BiYmCFf//ef////////////////r/////cP8E98deAAAA6UlEQVR4nGNgYGRiZmFlZWVj5+DkAgMGbh5ePn4BAQFBIWERqJCoGK+4hKSkpJS0jKycnJy8giJISEkZDFRU1dTU1DU0QUJa2jq6evoGhkbGJqZGZuZgIQtLK2sbWzt7B0cne6iQs4urm7sHBECEPL28vIEcH19HP38/iFBAYGBQsIdHSGhYeEQkRCgqOjom1sMjLj4hMSkZIpSSmpoG1GhnmJ6RmZUNFsrJzQOC/ILCoqKi4pJSkBAElJVXIDxUWVVdXVOLIlRX39DQ2IQixFtXWdncghDibm1rB4OOzi6oEDAIu8EAHoQAMIxE6l4NMA4AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>

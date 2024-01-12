@@ -1,0 +1,222 @@
+---2022-11-16--
+ALTER TABLE `users`
+ADD `designation` varchar(80) COLLATE 'utf8mb4_unicode_ci' NULL AFTER `name`;
+
+---2022-11-17--
+ALTER TABLE orders
+ADD order_by int NULL DEFAULT '0',
+ADD order_via varchar(191) COLLATE 'utf8mb4_unicode_ci' NULL AFTER order_by;
+
+
+---2022-11-27--
+ALTER TABLE orders
+ADD purchase_order_no varchar(191) COLLATE 'utf8mb4_unicode_ci' NULL;
+
+---2022-11-29--
+ALTER TABLE `orders`
+ADD `vat_amount` varchar(191) COLLATE 'utf8mb4_unicode_ci' NULL  DEFAULT '0',
+ADD `additional_fee` text COLLATE 'utf8mb4_unicode_ci' NULL AFTER `vat_amount`,
+ADD `trans_reference_id` varchar(191) COLLATE 'utf8mb4_unicode_ci' NULL AFTER `additional_fee`,
+ADD `discount_status_show` tinyint NULL DEFAULT '0' AFTER `trans_reference_id`;
+
+
+ALTER TABLE `users`
+ADD `created_by` int NULL DEFAULT '0' AFTER `created_at`;
+
+
+
+ALTER TABLE `shipping_addresses`
+ADD `company_name` varchar(255) COLLATE 'utf8mb4_unicode_ci' NULL AFTER `address`;
+
+
+ALTER TABLE `users`
+ADD `company_name` varchar(80) COLLATE 'utf8mb4_unicode_ci' NULL AFTER `designation`;
+
+
+ALTER TABLE `quotations`
+ADD `subject` varchar(191) COLLATE 'utf8mb4_unicode_ci' NULL AFTER `reference_no`;
+
+
+---2022-12-10--
+ALTER TABLE `admins` ADD `designation` varchar(180) COLLATE 'utf8mb4_unicode_ci' NULL AFTER `name`;
+
+ALTER TABLE `quotation_file_upload` ADD `file_name` varchar(200) COLLATE 'utf8mb4_unicode_ci' NULL AFTER `file_path`;
+
+---2022-12-10--
+
+CREATE TABLE `quotations` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `reference_no` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `subject` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_id` int NOT NULL,
+  `customer_id` int NOT NULL,
+  `total_item` int DEFAULT NULL,
+  `total_qty` double DEFAULT NULL,
+  `total_discount` double DEFAULT NULL,
+  `total_tax` double DEFAULT NULL,
+  `total_vat` double DEFAULT NULL,
+  `order_tax_rate` double DEFAULT '0',
+  `order_tax` double DEFAULT '0',
+  `total_price` double NOT NULL,
+  `order_discount` double DEFAULT NULL,
+  `shipping_cost` double DEFAULT NULL,
+  `shipping_vat` double DEFAULT NULL,
+  `shipping_amount` double DEFAULT NULL,
+  `shipping_description` text COLLATE utf8mb4_unicode_ci,
+  `grand_total` double NOT NULL,
+  `quotation_status` int NOT NULL,
+  `document` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `note` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `cart_info` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
+
+CREATE TABLE `product_quotation` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `code` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `quotation_id` int NOT NULL,
+  `product_id` int NOT NULL,
+  `qty` double NOT NULL,
+  `net_unit_price` double NOT NULL,
+  `single_unit_price_vat` double DEFAULT NULL,
+  `single_unit_vat` double DEFAULT NULL,
+  `discount` double NOT NULL,
+  `tax` double NOT NULL,
+  `vat` double NOT NULL,
+  `vat_rate` double NOT NULL,
+  `total` double NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
+
+
+ALTER TABLE `products` ADD `specifications` TEXT NULL DEFAULT NULL AFTER `meta_description`, ADD `quick_links` TEXT NULL DEFAULT NULL AFTER `specifications`;
+
+==================11-12-2022===========sarzil==============
+CREATE TABLE `accounts`(  
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `account_no` VARCHAR(191) NOT NULL,
+  `name` VARCHAR(191) NOT NULL,
+  `balance` DECIMAL(64,2) NOT NULL,
+  `note` VARCHAR(255) NOT NULL,
+  `created_at` TIMESTAMP,
+  `updated_at` DATETIME,
+  PRIMARY KEY (`id`)
+);
+CREATE TABLE `transaction_history`(  
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `customer_id` INT(11) NOT NULL,
+  `co` VARCHAR(191) NOT NULL,
+  `account_no` VARCHAR(191) NOT NULL,
+  `date` DATE NOT NULL,
+  `amount` DECIMAL(64,2) NOT NULL,
+  `type` VARCHAR(191) NOT NULL,
+  `category` VARCHAR(191) NOT NULL,
+  `method` VARCHAR(191) NOT NULL,
+  `note` VARCHAR(191),
+  `created_at` TIMESTAMP,
+  PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `request_call_back`(  
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(191) NOT NULL,
+  `phone` VARCHAR(191) NOT NULL,
+  `preferred_dt` DATETIME NOT NULL,
+  `customer_id` INT(11),
+  `status` VARCHAR(191),
+  `created_at` TIMESTAMP,
+  PRIMARY KEY (`id`)
+);
+
+ALTER TABLE `request_call_back` CHANGE `created_at` `created_at` TIMESTAMP NULL DEFAULT NULL;
+
+============= 11-12-2022 ======
+
+CREATE TABLE `transfer_history`(  
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `from_account_id` INT(11) NOT NULL,
+  `from_account` VARCHAR(191) NOT NULL,
+  `to_account` VARCHAR(191) NOT NULL,
+  `amount` DECIMAL(64,2) NOT NULL,
+  `created_at` TIMESTAMP NULL DEFAULT NULL,
+  `updated_at` TIMESTAMP NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+ALTER TABLE `request_call_back` ADD `updated_at` TIMESTAMP NULL DEFAULT NULL AFTER `created_at`;
+
+========== 12-12-2022 =========
+
+ALTER TABLE `request_call_back` ADD `product_id` INT(11) NOT NULL AFTER `id`;
+
+ALTER TABLE `request_call_back` CHANGE `status` `status` TINYINT(2) NOT NULL DEFAULT '0';
+
+
+======= 13-12-2022 =====
+ALTER TABLE `request_call_back` ADD `preffered_time` VARCHAR(50) NOT NULL AFTER `preferred_dt`;
+ALTER TABLE `request_call_back` CHANGE `preferred_dt` `preferred_dt` DATE NOT NULL;
+
+========14-12--2022=========
+ALTER TABLE `request_call_back`   
+  CHANGE `status` `status` ENUM('Pending','Mark As Read','Reject') CHARSET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT 'Pending'   NULL;
+
+ALTER TABLE `users`   
+  CHANGE `email` `email` VARCHAR(80) CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
+  CHANGE `password` `password` VARCHAR(80) CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci NULL;
+
+============16-12-22===============
+INSERT INTO `attributes` (`name`) VALUES ('Model'); 
+INSERT INTO `attributes` (`name`) VALUES ('Size');
+
+
+CREATE TABLE `product_questions` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `product_id` INT(11) NOT NULL , `customer_id` INT(11) NOT NULL , `question` VARCHAR(255) NOT NULL , `answer` TEXT NULL , `answer_given_by` VARCHAR(50) NULL , `created_at` TIMESTAMP NULL , `updated_at` TIMESTAMP NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+ALTER TABLE `products` ADD `short_description` TEXT NULL DEFAULT NULL AFTER `code`;
+
+
+=========== 20-12-2022 =====
+
+ALTER TABLE `blog_post` ADD `updated_at` TIMESTAMP NULL DEFAULT NULL AFTER `created_at`;
+
+
+ALTER TABLE `categories` ADD `banner` VARCHAR(200) NULL DEFAULT NULL AFTER `priority`, ADD `meta_title` VARCHAR(150) NULL DEFAULT NULL AFTER `banner`, ADD `meta_description` VARCHAR(255) NULL DEFAULT NULL AFTER `meta_title`;
+
+CREATE TABLE `searches` ( `id` BIGINT(20) NOT NULL AUTO_INCREMENT , `customer_id` INT(11) NOT NULL DEFAULT '0' , `query` VARCHAR(255) NOT NULL , `count` INT(11) NOT NULL DEFAULT '0' , `created_at` TIMESTAMP NULL DEFAULT NULL , `updated_at` TIMESTAMP NULL DEFAULT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+
+==============================21-12-2022====================
+CREATE TABLE `quotation_contact`(  
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `quotation_id` INT(11) NOT NULL,
+  `f_name` VARCHAR(255) NOT NULL,
+  `l_name` VARCHAR(255) NOT NULL,
+  `email` VARCHAR(191) NOT NULL,
+  `phone` VARCHAR(191) NOT NULL,
+  `company` VARCHAR(255),
+  `state` VARCHAR(191),
+  `industry` VARCHAR(191),
+  `city` VARCHAR(191),
+  `comments` TEXT(1024),
+  `remarks` TEXT(1024),
+  `created_at` TIMESTAMP,
+  PRIMARY KEY (`id`)
+);
+
+ALTER TABLE `quotation_contact`   
+  ADD COLUMN `rfq_file` VARCHAR(255) NULL AFTER `remarks`;
+
+ALTER TABLE `products` ADD `features` TEXT NULL DEFAULT NULL AFTER `quick_links`;
+
+================22-12-2022======================
+ALTER TABLE users
+  DROP INDEX users_email_unique;  
+
+ALTER TABLE `quotation_contact`   
+  CHANGE `quotation_id` `quotation_id` INT(11) NULL,
+  ADD COLUMN `file_name` VARCHAR(255) NULL AFTER `rfq_file`;

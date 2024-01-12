@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18">
+	<title>delivery-truck</title>
+	<defs>
+		<image  width="18" height="14" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAMAAAAVBLyFAAAAAXNSR0IB2cksfwAAAThQTFRF/9Fc/9Fc/9Fc8vDp8vLw9+W4/9Fc/9FcAAAA/9Fc/9Fc8/Hq8vLy+OKr/9Fc8/Dm8/Hu8/Ht+OKp/9Fc/NqD/NqC/tZx/8Nb/3BY/3BY/3BY/6pb+oJu/I98/Ih0/3Jb/3BY/6la4LGu2+Hn7/Dx8u3s+5KA/3BYztfg2N/m5+rt+Kea/3BY7ZOH5Kij5aqk9JeJ/3BY/3BY/3BY2LddioNdgn5d0rNd/M9csWJbfVhcmF1b7m1ZzbBcxatdZ21fPFRmPFRnV2NgsJ1dzZJbol9bRVFiPFVnP1Nkh1pcwWRaM0peO1NmZXiGdIWRNExfNEtfQVprhpOeV2x8N09iM0peM0peP1hqbX+MeoqWP1hqOVFkNU1gRFxujJiiXHCAPVZoQFlrQFlrQFlrQFlrQFlrQFlrQFlr8WrYVAAAAGh0Uk5TUJGUlZWVhh8A+f////+P/////5X///+uPTcO+/n57nMB/v/////bOP////Rw/////7H/v/////////////7+///////9///////O/v///////////yQlpv//uTgq9f/9aCCOmTVjgxXJxjsAAAAAs0lEQVR4nGNgYGRiYmZhYWViYmPnAAMGTi4uLm4eHl4gxQcVAjK5+AUEhYCUMJKQiKiIGJASl5CQkJSCCEGBtIysrJy8ArKQopKyiqqaOqqQhqaWtg6KkK6enr6BIYqQEQgYA4VMTM3MLSBCllbWNsYMtnb2Do5OzrZA4OLq5u7h6cXg7e3j6+fo7w0CAYFBwSHeDKFh4RGRUdFhIBATGxefEMbAwZGYlJwC8QpHanJaOgcAiQUhDsknU6EAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="2"/>
+</svg>
